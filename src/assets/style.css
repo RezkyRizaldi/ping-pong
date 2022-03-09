@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--hue: 200;
+	--saturation: 50%;
+	--foreground-color: hsl(var(--hue), var(--saturation), 75%);
+	--background-color: hsl(var(--hue), var(--saturation), 20%);
+}

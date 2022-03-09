@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="A Simple Pong Game with JavaScript" />
+		<meta name="keywords" content="Pong Game, JavaScript Game" />
+		<title>Ping Pong</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/src/assets/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="/src/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#2d89ef" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" href="/src/dist/style.css" />
+		<script src="/src/assets/script.js" type="module"></script>
+	</head>
+	<body class="overflow-hidden bg-[color:var(--background-color)]">
+		<div class="flex justify-center text-[7vh] font-bold text-[color:var(--foreground-color)]" id="score">
+			<div class="mx-0 my-[1vh] grow basis-0 border-r-[.5vh] border-solid border-r-[color:var(--foreground-color)] py-0 px-[2vh] text-right opacity-50" id="playerScore">0</div>
+			<div class="mx-0 my-[1vh] grow basis-0 py-0 px-[2vh] opacity-50" id="computerScore">0</div>
+		</div>
+		<div class="absolute top-[calc(var(--y)*1vh)] left-[calc(var(--x)*1vw)] h-[2.5vh] w-[2.5vh] -translate-x-2/4 -translate-y-2/4 rounded-full bg-[color:var(--foreground-color)] [--x:50] [--y:50]" id="ball"></div>
+		<div class="absolute top-[calc(var(--position)*1vh)] left-[1vw] h-[10vh] w-[1vh] -translate-y-2/4 bg-[color:var(--foreground-color)] [--position:50]" id="playerPaddle"></div>
+		<div class="absolute top-[calc(var(--position)*1vh)] right-[1vw] h-[10vh] w-[1vh] -translate-y-2/4 bg-[color:var(--foreground-color)] [--position:50]" id="computerPaddle"></div>
+	</body>
+</html>
